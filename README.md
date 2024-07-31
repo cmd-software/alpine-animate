@@ -38,7 +38,7 @@ By default, the `fadeInUp` animation will be applied, however any Animate.css an
 
 ### Behaviour
 
-Internally, this uses the (Alpine Intersect)[https://alpinejs.dev/plugins/intersect] plugin.
+Internally, this uses the [Alpine Intersect](https://alpinejs.dev/plugins/intersect) plugin.
 
 When the root element (the one with `x-data`) scrolls into the viewport, any elements with the `x-animate` directive will have the relevant `animate--*` classes added to them, which triggers the animation(s).
 
@@ -50,7 +50,7 @@ The effective `10%` bottom margin can be changed by supplying an `offset` key/va
 <h1 x-data="animate({ offset: -50% })"
 ```
 
-Note that the value should be negative. See (https://alpinejs.dev/plugins/intersect#margin) for details.
+Note that the value should be negative. See [https://alpinejs.dev/plugins/intersect#margin]() for details.
 
 ### Modifiers
 
@@ -68,4 +68,12 @@ The `delay` modifier will change the delay of the animation from the default of 
 
 ```html
 <h1 x-data="animate" x-animate.delay.500ms>...</h1>
+```
+
+#### Combined usage
+
+The `duration` and `delay` modifiers can be combined in either order.
+
+```html
+<h1 x-data="animate" x-animate.duration.500ms.delay.500ms>...</h1>
 ```
