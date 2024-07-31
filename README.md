@@ -26,6 +26,29 @@ window.Alpine = Alpine
 Alpine.start()
 ```
 
+> [!NOTE]
+> Ensure that the CSS styles for Animate.css are included on the page.
+
+Install the library using `npm` or include it in your project using a CDN.
+
+In a typical Tailwind CSS setup (with `@import`, see [https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports]()), the library would be installed using `npm`.
+
+```bash
+npm install animate.css
+```
+
+Then in the `app.css` file, include the library by importing it.
+
+```css
+@import 'animate.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+...
+```
+
 ## Usage
 
 Initialise the component using `x-data="animate"` and the `x-animate` directive.
