@@ -1,4 +1,8 @@
+import intersect from '@alpinejs/intersect'
+
 export default function (Alpine) {
+    Alpine.plugin(intersect)
+
     Alpine.data('animate', (config = { offset: '-10%' }) => ({
         shown: false,
 
