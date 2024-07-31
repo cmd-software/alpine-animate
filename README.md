@@ -14,6 +14,18 @@ A minimalist and opinionated package to use [Animate.css](https://animate.style)
 npm install https://github.com/cmd-software/alpine-animate
 ```
 
+Next, register the plugin with Alpine.
+
+```js
+import Alpine from 'alpinejs'
+import animate from '@cmd-software/alpine-animate'
+
+Alpine.plugin(animate)
+
+window.Alpine = Alpine
+Alpine.start()
+```
+
 ## Usage
 
 Initialise the component using `x-data="animate"` and the `x-animate` directive.
