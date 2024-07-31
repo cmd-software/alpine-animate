@@ -1,0 +1,7 @@
+{
+  "name": "@cmd-software/alpine-animate",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Austin Carpenter",
+  "license": "MIT"
+}
