@@ -31,6 +31,6 @@ export default function (Alpine) {
 
         el.setAttribute('x-bind:style', JSON.stringify(styleConfig))
 
-        el.setAttribute('x-bind:class', `{'!opacity-100 animate__animated animate__${expression}': shown, 'opacity-0': ! shown}`)
+        el.setAttribute('x-bind:class', `{'animate__animated animate__${expression}': shown, 'opacity-0': ! shown}`)
     })
 }
