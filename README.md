@@ -1,6 +1,6 @@
 # cmd-software/alpine-animate
 
-A minimalist and opinionated package to use [Animate.css](https://animate.style) animations on scroll using [Alpine.js](https://alpinejs.dev).
+A minimalist and opinionated package to use [Animate.css](https://animate.style) animations on scroll in with [Alpine.js](https://alpinejs.dev).
 
 ```html
 <h1 x-data="animate" x-animate>
@@ -8,9 +8,12 @@ A minimalist and opinionated package to use [Animate.css](https://animate.style)
 </h1>
 ```
 
+> [!IMPORTANT]  
+> This package **does not** currently allow for triggering animations when they are scrolled *out* of the viewport.
+
 ### Kitchen Sink Example
 
-This real-world example uses both modifiers (`duration` and `delay`, listed below) and customises the point in the viewport which triggers the animation. It also uses `x-animate` (the directive that causes the element to animate) on children of the root element.
+This real-world example uses both modifiers (`duration` and `delay`, listed below) and customises the point in the viewport which triggers the animation (from 10% in from the bottom to 30%). It also uses `x-animate` (the directive that causes the element to animate) on children of the root element.
 
 https://github.com/user-attachments/assets/e9f112f3-9dd9-4e5c-b6b1-cd80f54ff499
 
