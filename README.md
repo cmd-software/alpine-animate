@@ -8,6 +8,12 @@ A minimalist and opinionated package to use [Animate.css](https://animate.style)
 </h1>
 ```
 
+### Kitchen Sink Example
+
+This real-world example uses both modifiers (`duration` and `delay`, listed below) and customises the point in the viewport which triggers the animation. It also uses `x-animate` (the directive that causes the element to animate) on children of the root element.
+
+https://github.com/user-attachments/assets/e9f112f3-9dd9-4e5c-b6b1-cd80f54ff499
+
 ## Installation
 
 ```bash
@@ -64,6 +70,10 @@ By default, the `fadeInUp` animation will be applied, however any Animate.css an
 Internally, this uses the [Alpine Intersect](https://alpinejs.dev/plugins/intersect) plugin.
 
 When the root element (the one with `x-data`) scrolls into the viewport, any elements with the `x-animate` directive will have the relevant `animate--*` classes added to them, which triggers the animation(s).
+
+> [!TIP]
+> To simplify things, usually something like a `section` will be the root element (with `x-data`) and children to be animated will have the `x-animate` directive. See the example above.
+
 
 More specifically – and this is the opinionated bit – when the *top* of the root element scrolls more than `10vh` the classes are applied.
 
